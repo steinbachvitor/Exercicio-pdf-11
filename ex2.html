@@ -18,5 +18,20 @@ o elemento (retangulo) com as propriedades width
 4.2 Apresente (alert) o valor do conteúdo de "retangulo"
 4.3 Apresente (alert) o valor das propriedade width, height e
 background-color (utilize getComputedStyle) -->
+	<div id="retangulo">"Retângulo"</div>
+	<style>
+        #retangulo{
+            width:150px;
+            height:30px;
+            background-color: blue;
+        }
+    </style>
+    <script>
+        let retangulo = document.getElementById("retangulo")
+        alert(retangulo.innerText)
+        alert (getComputedStyle(retangulo).width)
+        alert (getComputedStyle(retangulo).height)
+        alert (getComputedStyle(retangulo).background-color)
+    </script>
 </body>
 </html>
