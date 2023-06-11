@@ -18,5 +18,20 @@ o elemento (tech) com as propriedades width
 variável "elementoTech"
 4.2 Adicione à esse elemento um novo elemento <h1> com o
 texto "HTML, CSS e JavaScript" -->
+   <div id="tech"></div>
+    <style>
+        #box {
+            width: 200px;
+            height: 50px;
+            background-color: orange;
+        }
+    </style>
+    <script>
+        let elementoTech = document.getElementById("tech")
+        let elemento = document.createElement("h1")
+        elemento.textContent = "HTML, CSS e JavaScript"
+        elementoTech.appendChild(elemento)
+
+    </script>
 </body>
 </html>
